@@ -1,0 +1,46 @@
+# Sejong University Intelligence / Visualization Web App
+
+This repository hosts a static GitHub Pages site for an interactive campus intelligence and visualization dashboard. The project appears to be a front-end application focused on visualizing network, infrastructure, and event data with a map-based UI and timeline-driven analytics.
+
+## Project overview
+
+The app is built as a static web application served from GitHub Pages, with a bundled React/JavaScript front end and several asset directories for fonts, images, and Cesium-based map rendering.
+
+The landing page metadata and bundled assets indicate the site is designed for:
+
+- interactive campus or facility visualization
+- event log and timeline exploration
+- network / topology analysis
+- zone, target, and threat-style intelligence views
+- map-driven dashboards with Cesium and Google Maps integrations
+
+## Repository structure
+
+- `index.html` — app entry point and page metadata
+- `404.html` — GitHub Pages custom not-found page
+- `assets/` — compiled CSS and JavaScript bundles for the application
+- `assets/css/` — generated stylesheets
+- `assets/js/` — bundled application logic and vendor scripts
+- `Font/` — custom local fonts used by the UI
+- `image/` — static images used by the site
+- `cesium/` — Cesium-related assets and supporting files
+- `Console/` — console or internal text files
+- `.nojekyll` — disables Jekyll processing on GitHub Pages
+
+## Tech stack
+
+The generated frontend references a production bundle using:
+
+- React
+- Material UI (MUI)
+- CesiumJS
+- Google Maps JavaScript API
+- Charting and visualization libraries
+- Vite-style bundled assets (the file names suggest a compiled front-end build output)
+
+## Running locally
+
+Because this repository is a static site, you can preview it with a simple local web server:
+
+```bash
+python -m http.server 8000
